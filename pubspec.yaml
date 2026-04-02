@@ -1,0 +1,63 @@
+name: victor_todo
+description: Personal todo app — Flutter + drift + Riverpod
+publish_to: none
+version: 0.1.0
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+  flutter: ">=3.19.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Database
+  drift: ^2.18.0
+  sqlite3_flutter_libs: ^0.5.0
+
+  # State management
+  flutter_riverpod: ^2.5.0
+  riverpod_annotation: ^2.3.0
+
+  # Notifications
+  flutter_local_notifications: ^17.0.0
+
+  # Timezone support for scheduled notifications
+  timezone: ^0.9.0
+
+  # HTTP (LiteLLM stub)
+  http: ^1.2.0
+
+  # Env vars
+  flutter_dotenv: ^5.1.0
+
+  # Navigation
+  go_router: ^14.0.0
+
+  # Utilities
+  intl: ^0.19.0
+  uuid: ^4.4.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # Code generation
+  build_runner: ^2.4.0
+  drift_dev: ^2.18.0
+  riverpod_generator: ^2.4.0
+
+  # Mocking
+  mocktail: ^1.0.0
+
+  # Linting
+  flutter_lints: ^4.0.0
+
+  # SQLite library access for test helpers on Linux (no dev symlink by default)
+  sqlite3: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - .env
