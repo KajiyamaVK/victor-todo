@@ -13,17 +13,21 @@ On web and desktop, three screens stretch their content to the full viewport wid
 
 ## Solution
 
-Wrap the `body` content of each screen in a `Center` + `ConstrainedBox` with `maxWidth: 800`. On screens narrower than 800px (e.g. mobile), the constraint never activates and layout is unchanged.
+Apply `ConstrainedBox(maxWidth: 800)` differently per screen type:
 
-No platform or breakpoint conditional is needed — `ConstrainedBox` is naturally a no-op when the available width is already below the maximum.
+**List screens** (`HomeScreen`, `TaskListScreen`) — apply only inside the `data` branch of `tasksAsync.when(...)`, wrapping the `ListView.builder`. Loading and error branches are left untouched so their existing `Center` widgets continue to fill the screen properly. Use `Align(alignment: Alignment.topCenter)` rather than `Center` so the constrained list anchors to the top, not the vertical midpoint.
+
+**Form screen** (`TaskDetailScreen`) — wrap the entire `Form` body. There is no `when()` branching here, so wrapping the whole body is correct. `Center` is appropriate since the form should sit horizontally centred.
+
+No platform or breakpoint conditional is needed — `ConstrainedBox` is naturally a no-op when available width is already below the maximum.
 
 ## Affected Files
 
 | File | Change |
 |---|---|
-| `lib/presentation/screens/home/home_screen.dart` | Wrap `body` content in `Center` + `ConstrainedBox(maxWidth: 800)` |
+| `lib/presentation/screens/home/home_screen.dart` | In `data` branch: wrap `ListView.builder` in `Align(topCenter)` + `ConstrainedBox(maxWidth: 800)` |
 | `lib/presentation/screens/task_list/task_list_screen.dart` | Same |
-| `lib/presentation/screens/task_detail/task_detail_screen.dart` | Same — wraps the `Form(child: ListView(...))` |
+| `lib/presentation/screens/task_detail/task_detail_screen.dart` | Wrap full `Form` body in `Center` + `ConstrainedBox(maxWidth: 800)` |
 
 ## Constants
 
@@ -31,7 +35,11 @@ The `800` value is extracted to `AppConstants` as `kContentMaxWidth = 800.0` to 
 
 ## Testing
 
-Widget tests verify that each screen's `body` contains a `ConstrainedBox` with `maxWidth == 800` at the top of the widget tree. No new platform-specific test infrastructure is required.
+Widget tests verify:
+- `HomeScreen` and `TaskListScreen`: the `data` branch renders a `ConstrainedBox(maxWidth: 800)` wrapping the list; loading/error branches do NOT contain a `ConstrainedBox`.
+- `TaskDetailScreen`: the body contains a `ConstrainedBox(maxWidth: 800)` wrapping the form.
+
+No platform-specific test infrastructure is required.
 
 ## Out of Scope
 
