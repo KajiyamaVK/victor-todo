@@ -25,4 +25,8 @@ class AppConstants {
 
   /// All Tasks virtual list ID — no database row; UI concept only.
   static const String allTasksListId = '__all_tasks__';
+
+  /// Maximum width (in logical pixels) for centred content on wide screens.
+  /// Applied to list and form screens on web/desktop.
+  static const double kContentMaxWidth = 800.0;
 }
