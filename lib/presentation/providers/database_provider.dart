@@ -8,7 +8,7 @@ import 'package:drift/native.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
-import 'package:victor_todo/data/datasources/database/app_database.dart';
+import 'package:taskem/data/datasources/database/app_database.dart';
 
 part 'database_provider.g.dart';
 
@@ -21,7 +21,7 @@ part 'database_provider.g.dart';
 AppDatabase database(Ref ref) {
   return AppDatabase(
     NativeDatabase.createInBackground(
-      File('victor_todo.db'),
+      File('taskem.db'),
     ),
   );
 }

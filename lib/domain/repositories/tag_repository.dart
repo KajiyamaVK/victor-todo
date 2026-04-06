@@ -1,7 +1,7 @@
 // lib/domain/repositories/tag_repository.dart
 // Pure Dart — no Flutter, no drift imports.
 
-import 'package:victor_todo/domain/entities/tag.dart';
+import 'package:taskem/domain/entities/tag.dart';
 
 /// Abstract interface for tag persistence.
 ///

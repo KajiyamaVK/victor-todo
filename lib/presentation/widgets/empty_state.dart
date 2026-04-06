@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 
-import 'package:victor_todo/presentation/theme/app_theme.dart';
+import 'package:taskem/presentation/theme/app_theme.dart';
 
 /// Centred empty-state widget shown when a list has no items.
 ///

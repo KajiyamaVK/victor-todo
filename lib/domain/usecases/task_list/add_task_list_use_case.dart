@@ -1,8 +1,8 @@
 // lib/domain/usecases/task_list/add_task_list_use_case.dart
 // Pure Dart — no Flutter, no drift imports.
 
-import 'package:victor_todo/domain/entities/task_list.dart';
-import 'package:victor_todo/domain/repositories/task_list_repository.dart';
+import 'package:taskem/domain/entities/task_list.dart';
+import 'package:taskem/domain/repositories/task_list_repository.dart';
 
 /// Adds a new task list to the repository after validating business rules.
 ///

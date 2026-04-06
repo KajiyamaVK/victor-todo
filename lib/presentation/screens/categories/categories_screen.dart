@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:uuid/uuid.dart';
 
-import 'package:victor_todo/domain/entities/category.dart';
-import 'package:victor_todo/presentation/providers/category_providers.dart';
+import 'package:taskem/domain/entities/category.dart';
+import 'package:taskem/presentation/providers/category_providers.dart';
 
 /// Categories screen — lists all categories and provides an add form.
 ///

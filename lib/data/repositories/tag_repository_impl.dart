@@ -2,10 +2,10 @@
 //
 // Concrete implementation of TagRepository using drift DAO.
 
-import 'package:victor_todo/data/datasources/daos/tag_dao.dart';
-import 'package:victor_todo/data/mappers/tag_mapper.dart';
-import 'package:victor_todo/domain/entities/tag.dart' as domain show Tag;
-import 'package:victor_todo/domain/repositories/tag_repository.dart';
+import 'package:taskem/data/datasources/daos/tag_dao.dart';
+import 'package:taskem/data/mappers/tag_mapper.dart';
+import 'package:taskem/domain/entities/tag.dart' as domain show Tag;
+import 'package:taskem/domain/repositories/tag_repository.dart';
 
 /// Concrete implementation of [TagRepository] using [TagDao].
 class TagRepositoryImpl implements TagRepository {

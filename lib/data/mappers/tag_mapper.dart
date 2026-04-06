@@ -9,9 +9,9 @@
 
 import 'package:drift/drift.dart' show Value;
 
-import 'package:victor_todo/data/datasources/database/app_database.dart' as db
+import 'package:taskem/data/datasources/database/app_database.dart' as db
     show Tag, TagsCompanion;
-import 'package:victor_todo/domain/entities/tag.dart' as domain show Tag;
+import 'package:taskem/domain/entities/tag.dart' as domain show Tag;
 
 /// Converts between drift [db.Tag] and domain [domain.Tag].
 class TagMapper {

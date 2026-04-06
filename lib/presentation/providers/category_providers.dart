@@ -5,11 +5,11 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
-import 'package:victor_todo/data/repositories/category_repository_impl.dart';
-import 'package:victor_todo/domain/entities/category.dart';
-import 'package:victor_todo/domain/repositories/category_repository.dart';
-import 'package:victor_todo/domain/usecases/category/add_category_use_case.dart';
-import 'package:victor_todo/domain/usecases/category/get_categories_use_case.dart';
+import 'package:taskem/data/repositories/category_repository_impl.dart';
+import 'package:taskem/domain/entities/category.dart';
+import 'package:taskem/domain/repositories/category_repository.dart';
+import 'package:taskem/domain/usecases/category/add_category_use_case.dart';
+import 'package:taskem/domain/usecases/category/get_categories_use_case.dart';
 import 'database_provider.dart';
 
 part 'category_providers.g.dart';

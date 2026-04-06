@@ -1,7 +1,7 @@
 // lib/domain/repositories/task_list_repository.dart
 // Pure Dart — no Flutter, no drift imports.
 
-import 'package:victor_todo/domain/entities/task_list.dart';
+import 'package:taskem/domain/entities/task_list.dart';
 
 /// Abstract interface for task-list persistence.
 ///

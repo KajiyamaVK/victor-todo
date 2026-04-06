@@ -1,7 +1,7 @@
 // lib/domain/usecases/task/complete_task_use_case.dart
 // Pure Dart — no Flutter, no drift imports.
 
-import 'package:victor_todo/domain/repositories/task_repository.dart';
+import 'package:taskem/domain/repositories/task_repository.dart';
 
 /// Marks a task as completed and cancels its scheduled notification.
 ///

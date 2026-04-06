@@ -1,8 +1,8 @@
 // test/unit/domain/entities/task_test.dart
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:victor_todo/domain/entities/priority.dart';
-import 'package:victor_todo/domain/entities/task.dart';
+import 'package:taskem/domain/entities/priority.dart';
+import 'package:taskem/domain/entities/task.dart';
 
 void main() {
   // Helper to create a minimal valid task.

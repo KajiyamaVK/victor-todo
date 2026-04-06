@@ -5,16 +5,16 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
-import 'package:victor_todo/data/repositories/task_repository_impl.dart';
-import 'package:victor_todo/domain/entities/task.dart';
-import 'package:victor_todo/domain/repositories/task_repository.dart';
-import 'package:victor_todo/domain/usecases/task/add_task_use_case.dart';
-import 'package:victor_todo/domain/usecases/task/complete_task_use_case.dart';
-import 'package:victor_todo/domain/usecases/task/delete_task_use_case.dart';
-import 'package:victor_todo/domain/usecases/task/get_tasks_by_list_use_case.dart';
-import 'package:victor_todo/domain/usecases/task/get_tasks_use_case.dart';
-import 'package:victor_todo/domain/usecases/task/update_task_use_case.dart';
-import 'package:victor_todo/services/notification_service.dart';
+import 'package:taskem/data/repositories/task_repository_impl.dart';
+import 'package:taskem/domain/entities/task.dart';
+import 'package:taskem/domain/repositories/task_repository.dart';
+import 'package:taskem/domain/usecases/task/add_task_use_case.dart';
+import 'package:taskem/domain/usecases/task/complete_task_use_case.dart';
+import 'package:taskem/domain/usecases/task/delete_task_use_case.dart';
+import 'package:taskem/domain/usecases/task/get_tasks_by_list_use_case.dart';
+import 'package:taskem/domain/usecases/task/get_tasks_use_case.dart';
+import 'package:taskem/domain/usecases/task/update_task_use_case.dart';
+import 'package:taskem/services/notification_service.dart';
 import 'database_provider.dart';
 
 part 'task_providers.g.dart';

@@ -5,11 +5,11 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
-import 'package:victor_todo/data/repositories/task_list_repository_impl.dart';
-import 'package:victor_todo/domain/entities/task_list.dart';
-import 'package:victor_todo/domain/repositories/task_list_repository.dart';
-import 'package:victor_todo/domain/usecases/task_list/add_task_list_use_case.dart';
-import 'package:victor_todo/domain/usecases/task_list/get_task_lists_use_case.dart';
+import 'package:taskem/data/repositories/task_list_repository_impl.dart';
+import 'package:taskem/domain/entities/task_list.dart';
+import 'package:taskem/domain/repositories/task_list_repository.dart';
+import 'package:taskem/domain/usecases/task_list/add_task_list_use_case.dart';
+import 'package:taskem/domain/usecases/task_list/get_task_lists_use_case.dart';
 import 'database_provider.dart';
 
 part 'task_list_providers.g.dart';

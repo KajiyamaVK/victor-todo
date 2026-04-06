@@ -4,12 +4,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
-import 'package:victor_todo/core/constants/route_constants.dart';
-import 'package:victor_todo/core/utils/date_utils.dart';
-import 'package:victor_todo/domain/entities/task.dart';
-import 'package:victor_todo/presentation/providers/task_providers.dart';
-import 'package:victor_todo/presentation/theme/app_theme.dart';
-import 'package:victor_todo/presentation/widgets/priority_badge.dart';
+import 'package:taskem/core/constants/route_constants.dart';
+import 'package:taskem/core/utils/date_utils.dart';
+import 'package:taskem/domain/entities/task.dart';
+import 'package:taskem/presentation/providers/task_providers.dart';
+import 'package:taskem/presentation/theme/app_theme.dart';
+import 'package:taskem/presentation/widgets/priority_badge.dart';
 
 /// A list tile representing a single task.
 ///

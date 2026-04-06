@@ -1,7 +1,7 @@
 // lib/domain/repositories/category_repository.dart
 // Pure Dart — no Flutter, no drift imports.
 
-import 'package:victor_todo/domain/entities/category.dart';
+import 'package:taskem/domain/entities/category.dart';
 
 /// Abstract interface for category persistence.
 ///

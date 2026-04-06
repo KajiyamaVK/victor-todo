@@ -5,12 +5,12 @@
 
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:victor_todo/core/constants/route_constants.dart';
-import 'package:victor_todo/presentation/screens/categories/categories_screen.dart';
-import 'package:victor_todo/presentation/screens/home/home_screen.dart';
-import 'package:victor_todo/presentation/screens/settings/settings_screen.dart';
-import 'package:victor_todo/presentation/screens/task_detail/task_detail_screen.dart';
-import 'package:victor_todo/presentation/screens/task_list/task_list_screen.dart';
+import 'package:taskem/core/constants/route_constants.dart';
+import 'package:taskem/presentation/screens/categories/categories_screen.dart';
+import 'package:taskem/presentation/screens/home/home_screen.dart';
+import 'package:taskem/presentation/screens/settings/settings_screen.dart';
+import 'package:taskem/presentation/screens/task_detail/task_detail_screen.dart';
+import 'package:taskem/presentation/screens/task_list/task_list_screen.dart';
 
 /// Application router — thin wrapper around [GoRouter].
 ///

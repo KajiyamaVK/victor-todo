@@ -1,10 +1,10 @@
-# AGENTS.md — victor-todo
+# AGENTS.md — taskem
 
-This document provides guidelines for AI agents working on the victor-todo Flutter project.
+This document provides guidelines for AI agents working on the taskem Flutter project.
 
 ## Project Overview
 
-**victor-todo** — Personal Flutter Todo app for Linux desktop with future portability to web and mobile. Built with Clean Architecture, SQLite persistence via drift, Riverpod state management, and a dark UI.
+**taskem** — Personal Flutter Todo app for Linux desktop with future portability to web and mobile. Built with Clean Architecture, SQLite persistence via drift, Riverpod state management, and a dark UI.
 
 ### Project Layers
 
@@ -110,7 +110,7 @@ import 'package:drift/drift.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 // 4. Local — absolute package imports
-import 'package:victor_todo/domain/entities/task.dart';
+import 'package:taskem/domain/entities/task.dart';
 
 // 5. Local — relative imports (only within the same layer)
 import '../repositories/task_repository.dart';

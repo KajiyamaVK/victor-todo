@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 
-import 'package:victor_todo/presentation/theme/app_theme.dart';
+import 'package:taskem/presentation/theme/app_theme.dart';
 
 /// Small chip displaying a tag label.
 ///

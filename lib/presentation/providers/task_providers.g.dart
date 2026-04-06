@@ -6,7 +6,7 @@ part of 'task_providers.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$taskRepositoryHash() => r'64e63be7fa7b61e31af2dab621796669639385db';
+String _$taskRepositoryHash() => r'8a55f4e8ee3800b276c2ad0a7d083fe223d8a4ae';
 
 /// Provides the concrete [TaskRepository] backed by drift DAOs.
 ///

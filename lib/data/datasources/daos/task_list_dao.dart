@@ -5,7 +5,7 @@
 // ignore: depend_on_referenced_packages
 import 'package:drift/drift.dart';
 
-import 'package:victor_todo/data/datasources/database/app_database.dart';
+import 'package:taskem/data/datasources/database/app_database.dart';
 
 part 'task_list_dao.g.dart';
 

@@ -1,7 +1,7 @@
 // test/unit/domain/entities/category_test.dart
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:victor_todo/domain/entities/category.dart';
+import 'package:taskem/domain/entities/category.dart';
 
 void main() {
   group('Category entity', () {

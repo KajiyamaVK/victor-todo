@@ -1,7 +1,7 @@
 // lib/domain/entities/task.dart
 // Pure Dart — no Flutter, no drift imports.
 
-import 'package:victor_todo/domain/entities/priority.dart';
+import 'package:taskem/domain/entities/priority.dart';
 
 /// Immutable domain entity representing a single task.
 ///

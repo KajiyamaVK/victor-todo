@@ -1,7 +1,7 @@
 // test/unit/domain/entities/task_list_test.dart
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:victor_todo/domain/entities/task_list.dart';
+import 'package:taskem/domain/entities/task_list.dart';
 
 void main() {
   group('TaskList entity', () {

@@ -2,8 +2,8 @@
 //
 // In-memory fake implementation of [CategoryRepository] for use in unit tests.
 
-import 'package:victor_todo/domain/entities/category.dart';
-import 'package:victor_todo/domain/repositories/category_repository.dart';
+import 'package:taskem/domain/entities/category.dart';
+import 'package:taskem/domain/repositories/category_repository.dart';
 
 /// In-memory fake implementation of [CategoryRepository].
 class FakeCategoryRepository implements CategoryRepository {

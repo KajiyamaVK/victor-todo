@@ -5,11 +5,11 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
-import 'package:victor_todo/data/repositories/tag_repository_impl.dart';
-import 'package:victor_todo/domain/entities/tag.dart';
-import 'package:victor_todo/domain/repositories/tag_repository.dart';
-import 'package:victor_todo/domain/usecases/tag/add_tag_use_case.dart';
-import 'package:victor_todo/domain/usecases/tag/get_tags_use_case.dart';
+import 'package:taskem/data/repositories/tag_repository_impl.dart';
+import 'package:taskem/domain/entities/tag.dart';
+import 'package:taskem/domain/repositories/tag_repository.dart';
+import 'package:taskem/domain/usecases/tag/add_tag_use_case.dart';
+import 'package:taskem/domain/usecases/tag/get_tags_use_case.dart';
 import 'database_provider.dart';
 
 part 'tag_providers.g.dart';

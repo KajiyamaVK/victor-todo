@@ -4,14 +4,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:uuid/uuid.dart';
 
-import 'package:victor_todo/domain/entities/priority.dart';
-import 'package:victor_todo/domain/entities/task.dart';
-import 'package:victor_todo/presentation/providers/category_providers.dart';
-import 'package:victor_todo/presentation/providers/tag_providers.dart';
-import 'package:victor_todo/presentation/providers/task_providers.dart';
-import 'package:victor_todo/presentation/widgets/due_date_picker.dart';
-import 'package:victor_todo/presentation/widgets/priority_badge.dart';
-import 'package:victor_todo/presentation/widgets/tag_chip.dart';
+import 'package:taskem/domain/entities/priority.dart';
+import 'package:taskem/domain/entities/task.dart';
+import 'package:taskem/presentation/providers/category_providers.dart';
+import 'package:taskem/presentation/providers/tag_providers.dart';
+import 'package:taskem/presentation/providers/task_providers.dart';
+import 'package:taskem/presentation/widgets/due_date_picker.dart';
+import 'package:taskem/presentation/widgets/priority_badge.dart';
+import 'package:taskem/presentation/widgets/tag_chip.dart';
 
 /// Task detail screen — create a new task or edit an existing one.
 ///

@@ -139,7 +139,7 @@ class TaskTags extends Table {
 // Wires all tables and DAOs together.
 //
 // Usage:
-//   Production : AppDatabase(NativeDatabase.createInBackground(File('victor_todo.db')))
+//   Production : AppDatabase(NativeDatabase.createInBackground(File('taskem.db')))
 //   Tests      : AppDatabase(NativeDatabase.memory())
 // ---------------------------------------------------------------------------
 @DriftDatabase(

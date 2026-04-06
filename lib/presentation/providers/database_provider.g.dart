@@ -6,7 +6,7 @@ part of 'database_provider.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$databaseHash() => r'2d24f92656fc893ac686eec86a8db7f543919392';
+String _$databaseHash() => r'd3962baca7e2fe7722a7870bdb3329628a026458';
 
 /// Provides the single [AppDatabase] instance.
 ///

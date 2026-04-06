@@ -1,19 +1,19 @@
 // test/widget_test.dart
 //
-// Smoke test — verifies that VictorTodoApp can be pumped without crashing.
+// Smoke test — verifies that TaskemApp can be pumped without crashing.
 // Database and providers are overridden to avoid real I/O in tests.
 
 import 'package:drift/native.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:victor_todo/data/datasources/database/app_database.dart';
-import 'package:victor_todo/main.dart';
-import 'package:victor_todo/presentation/providers/database_provider.dart';
+import 'package:taskem/data/datasources/database/app_database.dart';
+import 'package:taskem/main.dart';
+import 'package:taskem/presentation/providers/database_provider.dart';
 
 void main() {
   testWidgets(
-    'VictorTodoApp smoke test — renders without crash',
+    'TaskemApp smoke test — renders without crash',
     (WidgetTester tester) async {
       // Use an in-memory database so no real file is created during tests.
       final inMemoryDb = AppDatabase(NativeDatabase.memory());
@@ -23,7 +23,7 @@ void main() {
           overrides: [
             databaseProvider.overrideWithValue(inMemoryDb),
           ],
-          child: const VictorTodoApp(),
+          child: const TaskemApp(),
         ),
       );
 

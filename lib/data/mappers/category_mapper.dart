@@ -9,10 +9,9 @@
 
 import 'package:drift/drift.dart' show Value;
 
-import 'package:victor_todo/data/datasources/database/app_database.dart' as db
+import 'package:taskem/data/datasources/database/app_database.dart' as db
     show Category, CategoriesCompanion;
-import 'package:victor_todo/domain/entities/category.dart' as domain
-    show Category;
+import 'package:taskem/domain/entities/category.dart' as domain show Category;
 
 /// Converts between drift [db.Category] and domain [domain.Category].
 class CategoryMapper {

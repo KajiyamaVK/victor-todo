@@ -7,11 +7,11 @@ import 'package:drift/drift.dart' show Value;
 import 'package:flutter_test/flutter_test.dart';
 
 // Alias drift-generated types to avoid name collisions with domain entities.
-import 'package:victor_todo/data/datasources/database/app_database.dart' as db
+import 'package:taskem/data/datasources/database/app_database.dart' as db
     show Task;
-import 'package:victor_todo/data/mappers/task_mapper.dart';
-import 'package:victor_todo/domain/entities/priority.dart';
-import 'package:victor_todo/domain/entities/task.dart' as domain show Task;
+import 'package:taskem/data/mappers/task_mapper.dart';
+import 'package:taskem/domain/entities/priority.dart';
+import 'package:taskem/domain/entities/task.dart' as domain show Task;
 
 void main() {
   // ---------------------------------------------------------------------------

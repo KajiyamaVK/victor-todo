@@ -6,10 +6,10 @@
 /// Application-wide constants.
 class AppConstants {
   /// The app display name shown in the AppBar and window title.
-  static const String appName = 'Victor Todo';
+  static const String appName = 'Taskem';
 
   /// Default database file name written to the application directory.
-  static const String databaseFileName = 'victor_todo.db';
+  static const String databaseFileName = 'taskem.db';
 
   /// Maximum length for a task title.
   static const int taskTitleMaxLength = 500;

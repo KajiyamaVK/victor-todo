@@ -2,11 +2,10 @@
 //
 // Concrete implementation of TaskListRepository using drift DAO.
 
-import 'package:victor_todo/data/datasources/daos/task_list_dao.dart';
-import 'package:victor_todo/data/mappers/task_list_mapper.dart';
-import 'package:victor_todo/domain/entities/task_list.dart' as domain
-    show TaskList;
-import 'package:victor_todo/domain/repositories/task_list_repository.dart';
+import 'package:taskem/data/datasources/daos/task_list_dao.dart';
+import 'package:taskem/data/mappers/task_list_mapper.dart';
+import 'package:taskem/domain/entities/task_list.dart' as domain show TaskList;
+import 'package:taskem/domain/repositories/task_list_repository.dart';
 
 /// Concrete implementation of [TaskListRepository] using [TaskListDao].
 class TaskListRepositoryImpl implements TaskListRepository {

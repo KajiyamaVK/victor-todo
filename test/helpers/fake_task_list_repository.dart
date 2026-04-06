@@ -2,8 +2,8 @@
 //
 // In-memory fake implementation of [TaskListRepository] for use in unit tests.
 
-import 'package:victor_todo/domain/entities/task_list.dart';
-import 'package:victor_todo/domain/repositories/task_list_repository.dart';
+import 'package:taskem/domain/entities/task_list.dart';
+import 'package:taskem/domain/repositories/task_list_repository.dart';
 
 /// In-memory fake implementation of [TaskListRepository].
 class FakeTaskListRepository implements TaskListRepository {

@@ -1,7 +1,7 @@
 // test/unit/domain/entities/tag_test.dart
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:victor_todo/domain/entities/tag.dart';
+import 'package:taskem/domain/entities/tag.dart';
 
 void main() {
   group('Tag entity', () {

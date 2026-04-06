@@ -7,11 +7,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:victor_todo/domain/entities/priority.dart';
-import 'package:victor_todo/domain/entities/task.dart';
-import 'package:victor_todo/presentation/providers/task_providers.dart';
-import 'package:victor_todo/presentation/theme/app_theme.dart';
-import 'package:victor_todo/presentation/widgets/task_tile.dart';
+import 'package:taskem/domain/entities/priority.dart';
+import 'package:taskem/domain/entities/task.dart';
+import 'package:taskem/presentation/providers/task_providers.dart';
+import 'package:taskem/presentation/theme/app_theme.dart';
+import 'package:taskem/presentation/widgets/task_tile.dart';
 
 import '../../helpers/fake_task_repository.dart';
 

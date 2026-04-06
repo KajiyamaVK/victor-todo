@@ -46,7 +46,7 @@ class AppTheme {
   // ThemeData
   // ---------------------------------------------------------------------------
 
-  /// Dark theme with the custom victor-todo colour palette applied.
+  /// Dark theme with the custom taskem colour palette applied.
   static ThemeData get dark => ThemeData.dark().copyWith(
         scaffoldBackgroundColor: backgroundDark,
         colorScheme: const ColorScheme.dark(

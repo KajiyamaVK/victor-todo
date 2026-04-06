@@ -6,8 +6,8 @@ import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import 'package:victor_todo/presentation/router/app_router.dart';
-import 'package:victor_todo/presentation/theme/app_theme.dart';
+import 'package:taskem/presentation/router/app_router.dart';
+import 'package:taskem/presentation/theme/app_theme.dart';
 
 /// Global plugin instance — accessed by [NotificationService].
 /// Declared here so the initialization is co-located with app startup.
@@ -29,20 +29,20 @@ Future<void> main() async {
 
   runApp(
     // ProviderScope is the root of the Riverpod provider tree.
-    const ProviderScope(child: VictorTodoApp()),
+    const ProviderScope(child: TaskemApp()),
   );
 }
 
 /// Root application widget.
 ///
 /// Configures the dark theme and app router.
-class VictorTodoApp extends StatelessWidget {
-  const VictorTodoApp({super.key});
+class TaskemApp extends StatelessWidget {
+  const TaskemApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-      title: 'Victor Todo',
+      title: 'Taskem',
       theme: AppTheme.dark,
       routerConfig: AppRouter.router,
       debugShowCheckedModeBanner: false,

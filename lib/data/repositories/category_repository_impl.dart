@@ -2,11 +2,10 @@
 //
 // Concrete implementation of CategoryRepository using drift DAO.
 
-import 'package:victor_todo/data/datasources/daos/category_dao.dart';
-import 'package:victor_todo/data/mappers/category_mapper.dart';
-import 'package:victor_todo/domain/entities/category.dart' as domain
-    show Category;
-import 'package:victor_todo/domain/repositories/category_repository.dart';
+import 'package:taskem/data/datasources/daos/category_dao.dart';
+import 'package:taskem/data/mappers/category_mapper.dart';
+import 'package:taskem/domain/entities/category.dart' as domain show Category;
+import 'package:taskem/domain/repositories/category_repository.dart';
 
 /// Concrete implementation of [CategoryRepository] using [CategoryDao].
 class CategoryRepositoryImpl implements CategoryRepository {

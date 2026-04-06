@@ -1,8 +1,8 @@
 // lib/domain/usecases/task/add_task_use_case.dart
 // Pure Dart — no Flutter, no drift imports.
 
-import 'package:victor_todo/domain/entities/task.dart';
-import 'package:victor_todo/domain/repositories/task_repository.dart';
+import 'package:taskem/domain/entities/task.dart';
+import 'package:taskem/domain/repositories/task_repository.dart';
 
 /// Adds a new task to the repository after validating business rules.
 ///

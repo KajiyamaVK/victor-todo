@@ -2,8 +2,8 @@
 //
 // In-memory fake implementation of [TagRepository] for use in unit tests.
 
-import 'package:victor_todo/domain/entities/tag.dart';
-import 'package:victor_todo/domain/repositories/tag_repository.dart';
+import 'package:taskem/domain/entities/tag.dart';
+import 'package:taskem/domain/repositories/tag_repository.dart';
 
 /// In-memory fake implementation of [TagRepository].
 class FakeTagRepository implements TagRepository {

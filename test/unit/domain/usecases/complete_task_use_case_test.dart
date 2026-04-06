@@ -1,9 +1,9 @@
 // test/unit/domain/usecases/complete_task_use_case_test.dart
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:victor_todo/domain/entities/priority.dart';
-import 'package:victor_todo/domain/entities/task.dart';
-import 'package:victor_todo/domain/usecases/task/complete_task_use_case.dart';
+import 'package:taskem/domain/entities/priority.dart';
+import 'package:taskem/domain/entities/task.dart';
+import 'package:taskem/domain/usecases/task/complete_task_use_case.dart';
 import '../../../helpers/fake_task_repository.dart';
 
 /// Fake NotificationService used solely for testing CompleteTaskUseCase.

@@ -1,8 +1,8 @@
 // lib/domain/usecases/tag/add_tag_use_case.dart
 // Pure Dart — no Flutter, no drift imports.
 
-import 'package:victor_todo/domain/entities/tag.dart';
-import 'package:victor_todo/domain/repositories/tag_repository.dart';
+import 'package:taskem/domain/entities/tag.dart';
+import 'package:taskem/domain/repositories/tag_repository.dart';
 
 /// Adds a new tag to the repository after validating business rules.
 ///

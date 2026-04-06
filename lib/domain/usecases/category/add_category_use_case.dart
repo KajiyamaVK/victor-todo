@@ -1,8 +1,8 @@
 // lib/domain/usecases/category/add_category_use_case.dart
 // Pure Dart — no Flutter, no drift imports.
 
-import 'package:victor_todo/domain/entities/category.dart';
-import 'package:victor_todo/domain/repositories/category_repository.dart';
+import 'package:taskem/domain/entities/category.dart';
+import 'package:taskem/domain/repositories/category_repository.dart';
 
 /// Adds a new category to the repository after validating business rules.
 ///

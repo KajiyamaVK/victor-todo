@@ -1,5 +1,5 @@
-name: victor_todo
-description: Personal todo app — Flutter + drift + Riverpod
+name: taskem
+description: Taskem — personal task manager built with Flutter
 publish_to: none
 version: 0.1.0
 

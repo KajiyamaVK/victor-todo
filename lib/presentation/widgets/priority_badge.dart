@@ -2,8 +2,8 @@
 
 import 'package:flutter/material.dart';
 
-import 'package:victor_todo/domain/entities/priority.dart';
-import 'package:victor_todo/presentation/theme/app_theme.dart';
+import 'package:taskem/domain/entities/priority.dart';
+import 'package:taskem/presentation/theme/app_theme.dart';
 
 /// Small coloured badge displaying a task's priority level.
 ///

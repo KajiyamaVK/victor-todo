@@ -9,10 +9,9 @@
 
 import 'package:drift/drift.dart' show Value;
 
-import 'package:victor_todo/data/datasources/database/app_database.dart' as db
+import 'package:taskem/data/datasources/database/app_database.dart' as db
     show TaskList, TaskListsCompanion;
-import 'package:victor_todo/domain/entities/task_list.dart' as domain
-    show TaskList;
+import 'package:taskem/domain/entities/task_list.dart' as domain show TaskList;
 
 /// Converts between drift [db.TaskList] and domain [domain.TaskList].
 class TaskListMapper {

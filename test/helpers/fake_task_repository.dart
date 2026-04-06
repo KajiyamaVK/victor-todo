@@ -3,8 +3,8 @@
 // In-memory fake implementation of [TaskRepository] for use in unit tests.
 // No database, no drift — just a plain list.
 
-import 'package:victor_todo/domain/entities/task.dart';
-import 'package:victor_todo/domain/repositories/task_repository.dart';
+import 'package:taskem/domain/entities/task.dart';
+import 'package:taskem/domain/repositories/task_repository.dart';
 
 /// In-memory fake implementation of [TaskRepository].
 ///
