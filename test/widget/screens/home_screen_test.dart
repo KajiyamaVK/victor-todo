@@ -8,6 +8,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:go_router/go_router.dart';
 
+import 'package:taskem/core/constants/app_constants.dart';
 import 'package:taskem/domain/entities/priority.dart';
 import 'package:taskem/domain/entities/task.dart';
 import 'package:taskem/presentation/providers/task_providers.dart';
@@ -158,7 +159,7 @@ void main() {
       final boxes =
           tester.widgetList<ConstrainedBox>(find.byType(ConstrainedBox));
       expect(
-        boxes.any((b) => b.constraints.maxWidth == 800.0),
+        boxes.any((b) => b.constraints.maxWidth == AppConstants.kContentMaxWidth),
         isTrue,
         reason:
             'Expected a ConstrainedBox with maxWidth 800 in the data branch',
