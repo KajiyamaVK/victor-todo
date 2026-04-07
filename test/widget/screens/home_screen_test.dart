@@ -142,5 +142,27 @@ void main() {
       // Verify no unhandled exception text appears.
       expect(find.textContaining('Error loading tasks'), findsNothing);
     });
+
+    testWidgets('data branch wraps ListView in ConstrainedBox(800)',
+        (tester) async {
+      final fakeRepo = FakeTaskRepository()
+        ..tasks.addAll([
+          _makeTask(id: 'a', title: 'Test task'),
+        ]);
+
+      await tester.pumpWidget(_buildTestApp(fakeRepo));
+      await tester.pump();
+      await tester.pump(const Duration(milliseconds: 100));
+
+      // ConstrainedBox with maxWidth 800 must be present when list has items.
+      final boxes =
+          tester.widgetList<ConstrainedBox>(find.byType(ConstrainedBox));
+      expect(
+        boxes.any((b) => b.constraints.maxWidth == 800.0),
+        isTrue,
+        reason:
+            'Expected a ConstrainedBox with maxWidth 800 in the data branch',
+      );
+    });
   });
 }

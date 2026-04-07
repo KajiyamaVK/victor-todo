@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import 'package:taskem/core/constants/app_constants.dart';
 import 'package:taskem/core/constants/route_constants.dart';
 import 'package:taskem/presentation/providers/task_providers.dart';
 import 'package:taskem/presentation/widgets/empty_state.dart';
@@ -56,11 +57,20 @@ class HomeScreen extends ConsumerWidget {
               onCtaTap: () => context.push(RouteConstants.taskDetail),
             );
           }
-          return ListView.builder(
-            itemCount: tasks.length,
-            itemBuilder: (context, index) {
-              return TaskTile(task: tasks[index]);
-            },
+          // Constrain list width on wide screens (web/desktop).
+          return Align(
+            alignment: Alignment.topCenter,
+            child: ConstrainedBox(
+              constraints: const BoxConstraints(
+                maxWidth: AppConstants.kContentMaxWidth,
+              ),
+              child: ListView.builder(
+                itemCount: tasks.length,
+                itemBuilder: (context, index) {
+                  return TaskTile(task: tasks[index]);
+                },
+              ),
+            ),
           );
         },
       ),
