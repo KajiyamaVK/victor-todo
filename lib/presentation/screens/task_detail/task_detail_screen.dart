@@ -9,6 +9,7 @@ import 'package:taskem/domain/entities/task.dart';
 import 'package:taskem/presentation/providers/category_providers.dart';
 import 'package:taskem/presentation/providers/tag_providers.dart';
 import 'package:taskem/presentation/providers/task_providers.dart';
+import 'package:taskem/core/constants/app_constants.dart';
 import 'package:taskem/presentation/widgets/due_date_picker.dart';
 import 'package:taskem/presentation/widgets/priority_badge.dart';
 import 'package:taskem/presentation/widgets/tag_chip.dart';
@@ -157,11 +158,18 @@ class _TaskDetailScreenState extends ConsumerState<TaskDetailScreen> {
             ),
         ],
       ),
-      body: Form(
-        key: _formKey,
-        child: ListView(
-          padding: const EdgeInsets.all(16),
-          children: [
+      body: Center(
+        child: ConstrainedBox(
+          // Mirrors the max-width constraint used in TaskListScreen and
+          // HomeScreen so the form does not stretch uncomfortably on desktops.
+          constraints: const BoxConstraints(
+            maxWidth: AppConstants.kContentMaxWidth,
+          ),
+          child: Form(
+            key: _formKey,
+            child: ListView(
+              padding: const EdgeInsets.all(16),
+              children: [
             // Title field.
             TextFormField(
               controller: _titleController,
@@ -257,7 +265,9 @@ class _TaskDetailScreenState extends ConsumerState<TaskDetailScreen> {
                 );
               },
             ),
-          ],
+              ],
+            ),
+          ),
         ),
       ),
     );
