@@ -14,6 +14,7 @@ This project has mandatory reference documents that must be read before writing 
 .guidelines/06-testing-strategy.md
 .guidelines/07-state-management.md
 .guidelines/08-what-to-build.md
+.guidelines/09-ui-design.md
 ```
 
 ### Why the Guidelines Exist
@@ -39,7 +40,7 @@ If you have not read the guidelines, stop and read them now.
 | **Architecture** | Clean Architecture: domain / data / presentation layers |
 | **State management** | Riverpod (`flutter_riverpod` + `riverpod_generator`) |
 | **Database** | SQLite via drift (type-safe ORM with in-memory test mode) |
-| **Theme** | Dark UI (`ThemeData.dark()` with custom colour palette) |
+| **Theme** | Dark UI — see `.guidelines/09-ui-design.md` for palette and component styles |
 | **LLM stub** | FLOW LiteLLM Proxy (plumbing only — no AI features yet) |
 | **Testing** | TDD mandatory (Red-Green-Refactor) |
 | **GitHub** | `KajiyamaVK/taskem` (personal account) |

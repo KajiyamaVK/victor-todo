@@ -51,15 +51,11 @@ This file defines the canonical scope and build order for taskem. Do not build f
 
 ### UI / Theme
 
-- [ ] Dark theme (`AppTheme` class with `ThemeData.dark()` and custom palette)
-- [ ] HomeScreen: all tasks view
-- [ ] TaskListScreen: tasks filtered by named list
-- [ ] TaskDetailScreen: create and edit task form
-- [ ] CategoriesScreen: list and add categories
-- [ ] SettingsScreen: placeholder (no settings in v1)
-- [ ] EmptyState widget: shown when a list has no tasks
-- [ ] TaskTile widget: title, priority badge, due date chip, completion toggle
-- [ ] Tag chips on task tile
+See `.guidelines/09-ui-design.md` for colour palette, component styles, screen list, and layout rules.
+
+- [ ] Dark theme (`AppTheme` class — see `09-ui-design.md` for palette)
+- [ ] HomeScreen, TaskListScreen, TaskDetailScreen, CategoriesScreen, SettingsScreen (placeholder)
+- [ ] EmptyState, TaskTile, PriorityBadge, TagChip, DueDatePicker widgets
 
 ### Infrastructure
 

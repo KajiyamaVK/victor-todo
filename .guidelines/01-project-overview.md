@@ -27,7 +27,7 @@ The app is a productivity tool — no AI features in this phase. The LiteLLM int
 | Priorities | Enum: low / medium / high / urgent |
 | Lists | Named lists to group tasks; "All Tasks" view is the default |
 | Sort by date | Default sort order: due date ascending |
-| Dark theme | Custom dark colour palette via `ThemeData.dark()` |
+| Dark theme | Custom dark colour palette — see `.guidelines/09-ui-design.md` |
 
 ## Features Out of Scope
 

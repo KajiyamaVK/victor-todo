@@ -14,6 +14,7 @@ This folder contains reference guidelines for AI agents and developers working o
 | [06-testing-strategy.md](./06-testing-strategy.md) | TDD enforcement, test structure, drift in-memory DB, mocktail patterns |
 | [07-state-management.md](./07-state-management.md) | Riverpod patterns, provider definitions, how providers connect to use cases |
 | [08-what-to-build.md](./08-what-to-build.md) | Feature backlog and build order — what is in scope and what is not |
+| [09-ui-design.md](./09-ui-design.md) | Colour palette, component styles, screen list, widget list, layout rules |
 
 ## Quick Orientation
 

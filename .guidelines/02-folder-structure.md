@@ -17,7 +17,6 @@ taskem/
     integration/                # Future use
   .guidelines/                  # This folder
   CLAUDE.md
-  AGENTS.md
   pubspec.yaml
   analysis_options.yaml
   .env.example
